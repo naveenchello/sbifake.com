@@ -1,0 +1,701 @@
+<html>
+  <head>
+    <title>SBI</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* body{
+          background-image:url("https://img.freepik.com/free-vector/abstack-background-cartoon-style-bigbamm-sunlight_68708-513.jpg?size=626&ext=jpg");
+          background-size: 100%;
+          } */
+      .header {
+        height: 100px;
+        background-color: #f0f8ff;
+      }
+      .sbi {
+        margin-top: 2.5%;
+        width: 7%;
+      }
+      .set1 a {
+        text-decoration-line: none;
+
+        font-size: 75%;
+        padding-left: 3%;
+        color: cornsilk;
+        display: inline;
+        margin-left: 0%;
+      }
+      .set2 a {
+        text-decoration-line: none;
+
+        font-size: 75%;
+        padding-left: 3%;
+        color: rgb(81, 7, 255);
+        display: inline;
+        margin-left: 0%;
+      }
+      .set1 {
+        height: 30px;
+        width: 80%;
+        background-color: rgb(90, 48, 241);
+        margin-left: 10%;
+        margin-top: -5%;
+        margin-right: 10%;
+        padding-top: 10px;
+        padding-right: 10%;
+      }
+      .set2 {
+        height: 30px;
+        width: 80%;
+        background-color: #f0f8ff;
+        margin-left: 10%;
+        margin-top: 1.5%;
+        margin-right: 10%;
+        padding-top: 10px;
+        padding-right: 5%;
+        padding-left: 2%;
+      }
+      .set2 a:hover {
+        text-decoration-line: underline;
+        text-underline-position: initial;
+        text-decoration-style: solid;
+        text-decoration-color: cyan;
+      }
+      .set1 label {
+        color: cornsilk;
+        padding-top: 10px;
+        padding-left: 1%;
+        font-size: 10px;
+      }
+      .net {
+        float: right;
+        padding-right: 2%;
+        background-color: rgb(255, 229, 80);
+        color: black !important;
+        padding-top: 1.2%;
+        margin-top: -1%;
+        margin-right: -12.5%;
+        height: 28px;
+        font-size: 10px !important;
+      }
+      .div3 {
+        width: auto;
+        height: 40%;
+        background-color: rgb(118, 193, 255);
+      }
+      .div3 p {
+        padding-top: 0%;
+        float: left;
+        padding-left: 0%;
+        padding-right: 5%;
+        color: azure;
+        width: auto;
+        height: 10px;
+      }
+
+      .div3 img {
+        margin-top: -10%;
+        width: 20px;
+        height: 20px;
+      }
+      .inner_div3 {
+        z-index: 2;
+        height: 40px;
+        width: 200px;
+        float: left;
+      }
+      .inner_div3:hover {
+        z-index: 1;
+        background-color: rgb(116, 47, 226);
+        float: left;
+        height: 40px;
+        width: 200px;
+      }
+      .inner_div3:hover .card {
+        z-index: 2;
+        margin-left: 30px;
+        margin-top: -3px;
+        height: 500px;
+        width: 600px;
+        background-color: rgb(63, 63, 57, 0.7);
+      }
+      .inner_div3:hover .triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid rgb(63, 63, 57, 0.3);
+        margin-top: 28px;
+        margin-left: 100px;
+      }
+      .inner_div3:hover .card1 {
+        margin-left: 0px;
+        margin-top: -3px;
+        height: 500px;
+        width: 600px;
+        background-color: rgb(63, 63, 57, 0.5);
+      }
+      .inner_div3:hover .card2 {
+        margin-left: 0px;
+        margin-top: -3px;
+        height: 500px;
+        width: 200px;
+        background-color: rgb(63, 63, 57, 0.5);
+      }
+      .inner_div3:hover .card3 {
+        margin-left: -50px;
+        /* margin-right: -40px; */
+        margin-top: -3px;
+        height: 250px;
+        width: 250px;
+        background-color: rgb(63, 63, 57, 0.5);
+      }
+      .inner_div3:hover .card4 {
+        margin-left: -50px;
+        margin-top: -3px;
+        height: 250px;
+        width: 250px;
+        background-color: rgb(63, 63, 57, 0.5);
+      }
+      .inner_div3:hover .card5 {
+        margin-left: -180px;
+        margin-top: -3px;
+        height: 500px;
+        width: 400px;
+        background-color: rgb(63, 63, 57, 0.5);
+      }
+      .div3 label {
+        margin-top: 50%;
+      }
+      body {
+        /* background-color: rgb(116, 47, 226); */
+      }
+      .slider {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+      }
+      .slider img {
+        height: 550px;
+        width: 1264px;
+      }
+      .slide-btn {
+        position: absolute !important;
+
+        margin-left: 40%;
+        margin-top: 22%;
+      }
+      .slide-btn p {
+        display: inline-block;
+
+        font-size: 60px;
+        font: bold;
+        padding-left: 10px;
+
+        color: rgb(53, 207, 228);
+      }
+      .cardview1 {
+        position: relative;
+        width: 184px;
+        height: 300px;
+        background-color: rgba(255, 219, 13, 0.59);
+        margin-top: -79px;
+        margin-left: 1070px;
+        /* border-radius: 0px 0px 0px 1000px; */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+      }
+      .lab p {
+        position: absolute;
+        top: -14px;
+        left: 8px;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        width: 168px;
+        height: 28px;
+        background-color: white;
+      }
+      .lab select {
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        font-size: 18px;
+        text-align: center;
+        width: 141px;
+        height: 32px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(129, 129, 129);
+      }
+      .pa {
+        position: absolute;
+        top: 82px;
+        left: 8px;
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        width: 168px;
+        height: 28px;
+      }
+
+      .cardview2 {
+        width: 184px;
+        height: 250px;
+        /* border-radius: 0px 1000px 0px 0px; */
+        clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 92%);
+        background-color: rgba(133, 133, 133, 0.795);
+        margin-top: -67px;
+        margin-left: 1070px;
+      }
+
+      @media only screen and (max-width: 1240px) {
+        .header {
+          height: 100px;
+          background-color: #f0f8ff;
+        }
+        .sbi {
+          margin-top: 2.5%;
+          width: 7%;
+        }
+        .set1 a {
+          text-decoration-line: none;
+
+          font-size: 75%;
+          padding-left: 3%;
+          color: cornsilk;
+          display: inline;
+          margin-left: 0%;
+        }
+        .set2 a {
+          text-decoration-line: none;
+
+          font-size: 75%;
+          padding-left: 3%;
+          color: rgb(81, 7, 255);
+          display: inline;
+          margin-left: 0%;
+        }
+        .set1 {
+          height: 30px;
+          width: 80%;
+          background-color: rgb(90, 48, 241);
+          margin-left: 10%;
+          margin-top: -5%;
+          margin-right: 10%;
+          padding-top: 10px;
+          padding-right: 10%;
+        }
+        .set2 {
+          height: 30px;
+          width: 80%;
+          background-color: #f0f8ff;
+          margin-left: 10%;
+          margin-top: 1.5%;
+          margin-right: 10%;
+          padding-top: 10px;
+          padding-right: 5%;
+          padding-left: 2%;
+        }
+        .set2 a:hover {
+          text-decoration-line: underline;
+          text-underline-position: initial;
+          text-decoration-style: solid;
+          text-decoration-color: cyan;
+        }
+        .set1 label {
+          color: cornsilk;
+          padding-top: 10px;
+          padding-left: 1%;
+          font-size: 10px;
+        }
+        .net {
+          float: right;
+          padding-right: 2%;
+          background-color: rgb(255, 229, 80);
+          color: black !important;
+          padding-top: 1.2%;
+          margin-top: -1%;
+          margin-right: -12.5%;
+          height: 28px;
+          font-size: 10px !important;
+        }
+        .div3 {
+          width: auto;
+          height: 40%;
+          background-color: rgb(118, 193, 255);
+        }
+        .div3 p {
+          padding-top: 0%;
+          float: left;
+          padding-left: 0%;
+          padding-right: 5%;
+          color: azure;
+          width: auto;
+          height: 10px;
+        }
+
+        .div3 img {
+          margin-top: -10%;
+          width: 20px;
+          height: 20px;
+        }
+        .inner_div3 {
+          z-index: 2;
+          height: 40px;
+          width: 200px;
+          float: left;
+        }
+        .inner_div3:hover {
+          z-index: 1;
+          background-color: rgb(116, 47, 226);
+          float: left;
+          height: 40px;
+          width: 200px;
+        }
+        .inner_div3:hover .card {
+          z-index: 2;
+          margin-left: 30px;
+          margin-top: -3px;
+          height: 500px;
+          width: 600px;
+          background-color: rgb(63, 63, 57, 0.7);
+        }
+        .inner_div3:hover .triangle-up {
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 15px solid rgb(63, 63, 57, 0.3);
+          margin-top: 28px;
+          margin-left: 100px;
+        }
+        .inner_div3:hover .card1 {
+          margin-left: 0px;
+          margin-top: -3px;
+          height: 500px;
+          width: 600px;
+          background-color: rgb(63, 63, 57, 0.5);
+        }
+        .inner_div3:hover .card2 {
+          margin-left: 0px;
+          margin-top: -3px;
+          height: 500px;
+          width: 200px;
+          background-color: rgb(63, 63, 57, 0.5);
+        }
+        .inner_div3:hover .card3 {
+          margin-left: -50px;
+          /* margin-right: -40px; */
+          margin-top: -3px;
+          height: 250px;
+          width: 250px;
+          background-color: rgb(63, 63, 57, 0.5);
+        }
+        .inner_div3:hover .card4 {
+          margin-left: -50px;
+          margin-top: -3px;
+          height: 250px;
+          width: 250px;
+          background-color: rgb(63, 63, 57, 0.5);
+        }
+        .inner_div3:hover .card5 {
+          margin-left: -180px;
+          margin-top: -3px;
+          height: 500px;
+          width: 400px;
+          background-color: rgb(63, 63, 57, 0.5);
+        }
+        .div3 label {
+          margin-top: 50%;
+        }
+        body {
+          /* background-color: rgb(116, 47, 226); */
+        }
+        .slider {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          z-index: -1;
+        }
+        .slider img {
+          height: 550px;
+          width: 1224px;
+        }
+        .slide-btn {
+          position: absolute !important;
+
+          margin-left: 40%;
+          margin-top: 22%;
+        }
+        .slide-btn p {
+          display: inline-block;
+
+          font-size: 60px;
+          font: bold;
+          padding-left: 10px;
+
+          color: rgb(53, 207, 228);
+        }
+        .cardview1 {
+          position: relative;
+          width: 184px;
+          height: 300px;
+          background-color: rgba(255, 219, 13, 0.59);
+          margin-top: -79px;
+          margin-left: 1031px;
+          /* border-radius: 0px 0px 0px 1000px; */
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+        }
+        .lab p {
+          position: absolute;
+          top: -14px;
+          left: 8px;
+          font-size: 17px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center;
+          width: 168px;
+          height: 28px;
+          background-color: white;
+        }
+        .lab select {
+          position: absolute;
+          top: 45px;
+          left: 20px;
+          font-size: 18px;
+          text-align: center;
+          width: 141px;
+          height: 32px;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          background-color: rgb(129, 129, 129);
+        }
+        .pa {
+          position: absolute;
+          top: 82px;
+          left: 8px;
+          font-size: 17px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-align: center;
+          width: 168px;
+          height: 28px;
+        }
+
+        .cardview2 {
+          width: 184px;
+          height: 250px;
+          /* border-radius: 0px 1000px 0px 0px; */
+          clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 92%);
+          background-color: rgba(133, 133, 133, 0.795);
+          margin-top: -67px;
+          margin-left: 1031px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="sbi"
+        src="https://www.sbi.co.in/o/SBI-Theme/images/custom/logo.png"
+      />
+      <div class="set1">
+        <a href="https://www.sbi.co.in/web/about-us">About Us</a>
+        <label>|</label>
+        <a href="https://www.sbi.co.in/web/affiliates">Affiliates</a>
+        <label>|</label>
+        <a
+          href="https://www.sbi.co.in/web/corporate-governance/corporate-governance"
+          >Corporate Governance</a
+        >
+        <label>|</label>
+        <a
+          href="https://www.sbi.co.in/web/investor-relations/investor-relations"
+          >Investors Relations</a
+        >
+        <label>|</label>
+        <a href="https://www.sbi.co.in/web/sbi-in-the-news">SBI in the News</a>
+        <label>|</label>
+        <a href="https://www.sbi.co.in/web/customer-care/">Customer Care</a>
+
+        <a href="https://www.sbi.co.in/web/careers">Careers</a>
+        <a class="net" href="https://www.onlinesbi.com/">Net Banking</a>
+      </div>
+      <div class="set2">
+        <a href="https://www.sbi.co.in/web/about-us">PERSONAL</a>
+
+        <a href="https://www.sbi.co.in/web/affiliates">NRI</a>
+
+        <a
+          href="https://www.sbi.co.in/web/corporate-governance/corporate-governance"
+          >BUSINESS</a
+        >
+
+        <a
+          href="https://www.sbi.co.in/web/investor-relations/investor-relations"
+          >AGRICULTURAL & RURAL</a
+        >
+
+        <a href="https://www.sbi.co.in/web/sbi-in-the-news"
+          >INTERNATIONAL BANKING</a
+        >
+
+        <a href="https://www.sbi.co.in/web/customer-care/">SBI Wealth</a>
+      </div>
+      <div class="div3">
+        <div class="inner_div3">
+          <p>
+            <img
+              class="lb-image"
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/account.png"
+            />
+            <label class="lb-content">Accounts</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card"></div>
+        </div>
+        <div class="inner_div3">
+          <p>
+            <img
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/investments_deposits.png"
+            />
+            <label>Investments & Deposits</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card1"></div>
+        </div>
+        <div class="inner_div3">
+          <p>
+            <img
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/loans.png"
+            />
+            <label>Loans</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card2"></div>
+        </div>
+        <div class="inner_div3">
+          <p>
+            <img
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/cards.png"
+            />
+            <label>Cards</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card3"></div>
+        </div>
+        <div class="inner_div3">
+          <p>
+            <img
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/digital.png"
+            />
+            <label>Digital</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card4"></div>
+        </div>
+        <div class="inner_div3">
+          <p>
+            <img
+              src="https://www.sbi.co.in/o/SBI-Theme/images/custom/icons/navigation/information_services.png"
+            />
+            <label>Information & Services</label>
+          </p>
+          <div class="triangle-up"></div>
+          <div class="card5"></div>
+        </div>
+      </div>
+      <div class="slider">
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/2486969/230320-Adapts_SBI.jpg/5741d157-a43b-5e8c-9265-449d55d87d04?t=1584951694937"
+        />
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/3622800/2020-05-0181-SBI_We_Care_Deposit-Web_Banner_1820_W__x_831_ENG.jpg/6f792b20-44b7-889d-627a-b0894f8ff88b?t=1590662663777"
+        />
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/3622800/120820-Car-loan-Website-Banner-01.png/01548580-145b-3f02-fc5b-5717b63e27ea?t=1597225008559"
+        />
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/3622800/01072020_Banner_insta_account.jpg/235678bb-9ef5-c025-1a54-76d7051b7c51?t=1593599167340"
+        />
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/3622800/10062020_Personal+gold+loan_COVID_1820x831px_Eng.jpg/967bd7e6-c20c-657e-4507-0d93080252c9?t=1591788678671"
+        />
+        <img
+          class="slides"
+          src="https://www.sbi.co.in/documents/16012/3622800/bank-eng.jpg/a6e14eff-9d79-4296-4627-aeae7a37ff0e?t=1593423240908"
+        />
+      </div>
+      <div class="slide-btn">
+        <p class="slide-btns" onclick="myFunction(0)">_</p>
+        <p class="slide-btns" onclick="myFunction(1)">_</p>
+        <p class="slide-btns" onclick="myFunction(2)">_</p>
+        <p class="slide-btns" onclick="myFunction(3)">_</p>
+        <p class="slide-btns" onclick="myFunction(4)">_</p>
+        <p class="slide-btns" onclick="myFunction(5)">_</p>
+      </div>
+      <div class="cardview1">
+        <div class="lab">
+          <p>Interest Rates</p>
+          <select>
+            <option>Home Loan</option>
+            <option>Gold Loan</option>
+            <option>Personal Loan</option>
+            <option>SB Account</option>
+            <option>NRE SB Account</option>
+            <option>Education Loan</option>
+            <option>Auto Loan</option>
+            <option>Fixed Deposit</option>
+          </select>
+          <h1 class="pa">6.95% p.a.</h1>
+          <p class="pa1">w.e.f. 01.07.2020</p>
+          <p class="pa2">*T&C Apply.</p>
+        </div>
+      </div>
+      <div class="cardview2"></div>
+    </div>
+    <script>
+      var index = 0;
+      slide();
+      function myFunction(k) {
+        var im = document.getElementsByClassName("slides");
+        var btn = document.getElementsByClassName("slide-btns");
+        for (i = 0; i < im.length; i++) {
+          im[i].style.display = "none";
+          btn[i].style.color = "#35cfe4";
+        }
+        im[k].style.display = "block";
+        btn[k].style.color = "#ff0000";
+      }
+      function slide() {
+        var i;
+        var a = document.getElementsByClassName("slides");
+        var b = document.getElementsByClassName("slide-btns");
+        for (i = 0; i < a.length; i++) {
+          a[i].style.display = "none";
+          b[i].style.color = "#35cfe4";
+        }
+        index++;
+        if (index > a.length) {
+          index = 1;
+        }
+        a[index - 1].style.display = "block";
+        b[index - 1].style.color = "#ff0000";
+        setTimeout(slide, 5000);
+      }
+    </script>
+    <script></script>
+  </body>
+</html>
